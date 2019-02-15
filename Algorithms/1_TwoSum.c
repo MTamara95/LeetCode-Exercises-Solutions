@@ -15,7 +15,7 @@ int* twoSum(int *a, int n, int k) {
 				break;
 			}
 		}
-		if (ind == 1) { // we reach here because we breaked previous loop
+		if (ind == 1) { // we reach here because we broke the previous loop
 			break;
 		}
 	}
