@@ -1,3 +1,6 @@
+// task: https://leetcode.com/problems/add-two-numbers
+// (time) complexity: O(length(l1)+length(l2))
+
 void insert(struct ListNode *l, int n) {
 	while (l->next != NULL) {
 		l = l->next;

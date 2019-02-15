@@ -1,5 +1,5 @@
 // task: https://leetcode.com/problems/two-sum
-// time complexity: O(n^2), space complexity: O(1)
+// (time) complexity: O(n^2)
 
 int* twoSum(int *a, int n, int k) {
 
