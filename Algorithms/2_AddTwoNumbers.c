@@ -1,11 +1,9 @@
 // task: https://leetcode.com/problems/add-two-numbers
 // (time) complexity: O(length(l1)+length(l2))
 
-void append(struct ListNode **l, int n) { // insert into an empty list
-	struct ListNode *lTmp = (struct ListNode*) malloc(sizeof(struct ListNode));
-	lTmp->val = n;
-	lTmp->next = NULL;
-	*l = lTmp;
+void append(struct ListNode *l, int n) {
+	l->val = n;
+	l->next = NULL;
 }
 
 void insert(struct ListNode *l, int n) {
@@ -49,7 +47,7 @@ struct ListNode* addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
 	int rest = 0;
 	int n = (n1 > n2) ? (n1 + 1) : (n2 + 1);
 	struct ListNode *resultList = (struct ListNode*) malloc(sizeof(struct ListNode));
-	append(&resultList, (l1->val + l2->val) % 10);
+	append(resultList, (l1->val + l2->val) % 10);
 	rest = (l1->val + l2->val) / 10;
 	l1 = l1->next;
 	l2 = l2->next;
@@ -64,4 +62,3 @@ struct ListNode* addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
 	}
 
 	return resultList;
-}
