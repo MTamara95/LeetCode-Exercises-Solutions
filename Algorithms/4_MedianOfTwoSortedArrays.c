@@ -15,7 +15,7 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
 			nums[i++] = nums2[r++];
 		}
 	}
-
+	
 	if (r < nums2Size) {
 		while (r < nums2Size) {
 			nums[i++] = nums2[r++];
